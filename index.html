@@ -23,10 +23,58 @@
                     <img src="images/search.png" alt="search">
                     <input type="text" placeholder="Search">
                 </div>
-                <div class="nav-user-icon online">
+                <div class="nav-user-icon online" onclick="settingsMenuToggle()">
                     <img src="images/pexels-pixabay-220453.jpg" alt="user" class="profile-pic">
                 </div>
             </div>
+            <!-----settings menu----->
+
+            <div class="settings-menu">
+
+                <div id="dark-btn">
+                    <span></span>
+                </div>
+
+                <div class="settings-menu-inner">
+                    <div class="user-profile">
+                        <img src="images/pexels-pixabay-220453.jpg">
+                        <div>
+                            <p>John Nicholson</p>
+                            <a href="#">See your profile</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user-profile">
+                        <img src="images/feedback.png">
+                        <div>
+                            <p>Give Feedback</p>
+                            <a href="#">Help us to improve the new design</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="settings-links">
+                        <img src="images/setting.png" class="settings-icon">
+                        <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="images/help.png" class="settings-icon">
+                        <a href="#">Help & Support <img src="images/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="images/display.png" class="settings-icon">
+                        <a href="#">Display & Accessibility <img src="images/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="images/logout.png" class="settings-icon">
+                        <a href="#">Logout<img src="images/arrow.png" width="10px"></a>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
         </nav>
 
         <div class="container">
@@ -45,7 +93,7 @@
                     <a href="#"><img src="images/shortcut-1.png"> Web Developers</a>
                     <a href="#"><img src="images/shortcut-2.png"> Web Design course</a>
                     <a href="#"><img src="images/shortcut-3.png"> Full Stack Development</a>
-                    <a href="#"><img src="images/shortcut-4.png"> Website Experts</a>
+                    <a href="#"><img src="images/christopher-gower-m_HRfLhgABo-unsplash.jpg"> Website Experts</a>
                 </div>
             </div>
             <!-----main content----->
@@ -97,17 +145,20 @@
                     </div>
 
                 <div class="post-container">
-                    <div class="user-profile">
-                        <img src="images/pexels-pixabay-220453.jpg">
-                        <div>
-                            <p>John Nicholson</p>
-                            <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/pexels-pixabay-220453.jpg">
+                            <div>
+                                <p>John Nicholson</p>
+                                <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                            </div>
                         </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
                     </div>
                     <p class="post-text">Subscribe <span>@Vincent Tutorials</span> Youtube channel to watch more videos on website and UI designs. 
                         <a href="#">#VincentTutorials</a> <a href="#">#YoutubeChannel</a>
                     </p>
-                    <img src="images/feed-image-1.png" class="post-img">
+                    <img src="images/marvin-meyer-SYTO3xs06fU-unsplash.jpg" class="post-img">
                     
                     
                     <div class="post-row">
@@ -117,10 +168,133 @@
                             <div><img src="images/share.png"> 20</div>
                         </div>
                         <div class="post-profile-icon">
-
+                            <img src="images/pexels-pixabay-220453.jpg"><i class="fa-solid fa-caret-down"></i>
                         </div>
                     </div>
                 </div>
+
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/pexels-pixabay-220453.jpg">
+                            <div>
+                                <p>John Nicholson</p>
+                                <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">Like and Share this video with friends, tag<span>@Vincent Tutorials</span> facebook page on your post. Ask your doubts in the comments
+                        <a href="#">#VincentTutorials</a> <a href="#">#YoutubeChannel</a>
+                    </p>
+                    <img src="images/feed-image-2.png" class="post-img">
+                    
+                    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png">120</div>
+                            <div><img src="images/comments.png"> 45</div>
+                            <div><img src="images/share.png"> 20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/pexels-pixabay-220453.jpg"><i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/pexels-pixabay-220453.jpg">
+                            <div>
+                                <p>John Nicholson</p>
+                                <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">Like and Share this video with friends, tag<span>@Vincent Tutorials</span> facebook page on your post. Ask your doubts in the comments
+                        <a href="#">#VincentTutorials</a> <a href="#">#YoutubeChannel</a>
+                    </p>
+                    <img src="images/feed-image-3.png" class="post-img">
+                    
+                    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png">120</div>
+                            <div><img src="images/comments.png"> 45</div>
+                            <div><img src="images/share.png"> 20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/pexels-pixabay-220453.jpg"><i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/pexels-pixabay-220453.jpg">
+                            <div>
+                                <p>John Nicholson</p>
+                                <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">Like and Share this video with friends, tag<span>@Vincent Tutorials</span> facebook page on your post. Ask your doubts in the comments
+                        <a href="#">#VincentTutorials</a> <a href="#">#YoutubeChannel</a>
+                    </p>
+                    <img src="images/feed-image-4.png" class="post-img">
+                    
+                    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png">120</div>
+                            <div><img src="images/comments.png"> 45</div>
+                            <div><img src="images/share.png"> 20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/pexels-pixabay-220453.jpg"><i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/pexels-pixabay-220453.jpg">
+                            <div>
+                                <p>John Nicholson</p>
+                                <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">Like and Share this video with friends, tag<span>@Vincent Tutorials</span> facebook page on your post. Ask your doubts in the comments
+                        <a href="#">#VincentTutorials</a> <a href="#">#YoutubeChannel</a>
+                    </p>
+                    <img src="images/jason-goodman-vbxyFxlgpjM-unsplash.jpg" class="post-img">
+                    
+                    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png">120</div>
+                            <div><img src="images/comments.png"> 45</div>
+                            <div><img src="images/share.png"> 20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/pexels-pixabay-220453.jpg"><i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="load-more-btn">Load More</button>
+
 
                 </div>
                 <!-----right sidebar----->
@@ -192,5 +366,10 @@
 
             </div>
         </div>
+
+        <div class="footer">
+            <p>© 2023 Vincent Tutorials. All Rights Reserved | Design by <a href="#">Vincent Tutorials</a>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
